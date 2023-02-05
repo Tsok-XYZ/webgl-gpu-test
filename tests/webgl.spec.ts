@@ -7,5 +7,5 @@ test('It should render webgl using GPU hardware acceleration', async ({ page }) 
 
   await delay(5000);
   
-  await page.screenshot({ path: `screenshots/webgl.png`, fullPage: true, type: 'jpeg' });
+  await page.screenshot({ path: `screenshots/webgl.png` });
 });
