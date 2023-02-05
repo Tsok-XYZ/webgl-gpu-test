@@ -8,7 +8,7 @@ const config = {
       //   args: ["--use-gl=gles-egl"],
       //   args: ["--use-angle=gles-egl"],
       args: [
-        "--use-gl=egl",
+        "--use-angle=gles-egl",
         "--no-sandbox",
         "--headless",
         "--enable-logging",
