@@ -8,7 +8,7 @@ const config = {
       //   args: ["--use-gl=gles-egl"],
       //   args: ["--use-angle=gles-egl"],
       args: [
-        "--use-angle=gles-egl",
+        process.platform == "darwin" ?  "--use-angle=gles-egl" : "--use-gl=egl",
         "--no-sandbox",
         "--headless",
         "--enable-logging",

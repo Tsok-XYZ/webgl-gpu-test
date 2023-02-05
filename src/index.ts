@@ -21,7 +21,7 @@ app.get("/screenshot", async (req: Request, res: Response) => {
   height = height > 0 ? height : width
 
   const browser = await chromium.launch({ headless: true, args:[
-    "--use-angle=gles-egl",
+    process.platform == "darwin" ?  "--use-angle=gles-egl" : "--use-gl=egl",
     "--no-sandbox",
     "--headless",
     "--enable-logging",
