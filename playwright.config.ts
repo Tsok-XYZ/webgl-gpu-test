@@ -5,9 +5,10 @@ const config = {
       // force GPU hardware acceleration
       // (even in headless mode)
       //   args: ["--use-gl=egl"],
+      //   args: ["--use-gl=gles-egl"],
       //   args: ["--use-angle=gles-egl"],
       args: [
-        "--use-angle=gles-egl",
+        "--use-gl=gles-egl",
         "--no-sandbox",
         "--headless",
         "--enable-logging",
