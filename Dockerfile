@@ -13,7 +13,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 # COPY the needed files to the app folder in Docker image
 COPY package*.json /app/
 COPY tests/ /app/tests/
-COPY src/ /app/tests/
+COPY src/ /app/src/
 COPY tsconfig.json /app/
 COPY playwright.config.ts /app/
 COPY config.toml /app/
