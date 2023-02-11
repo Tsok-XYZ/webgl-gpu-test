@@ -28,4 +28,7 @@ RUN npx playwright install
 RUN npx playwright install-deps
 RUN npx playwright install chrome
 
+ENV PORT=8081
+EXPOSE 8081
+
 CMD npm run build && npm run start
